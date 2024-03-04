@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Persiapkan Semua Data
-day = pd.read_csv("D:\Files\Python\VC\Analisis Data dengan Python\day.csv")
+day = pd.read_csv("day.csv")
 day.head()
 drop_col = ['windspeed']
 sns.set(style='white')
