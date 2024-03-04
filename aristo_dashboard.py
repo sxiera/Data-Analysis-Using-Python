@@ -52,8 +52,6 @@ day['year'] = day['year'].map ({
 # 2. Mengubah tipe data menjadi 'datetime'
 day['daydate'] = pd.to_datetime(day.daydate)
 
-# Menyiapkan peminjam_harian_df
-
 # Menyiapkan daily_rent_df
 def create_daily_rent_df(df):
     daily_rent_df = df.groupby(by='daydate').agg({
